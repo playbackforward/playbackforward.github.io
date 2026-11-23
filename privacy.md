@@ -9,7 +9,7 @@ description: Datenschutzerklärung von Playback Forward.
 
 ## Verantwortlicher
 
-[Vorname Nachname], [Straße Hausnummer], [PLZ Ort], E-Mail: [info@playbackforward.com](mailto:info@playbackforward.com)
+[Vorname Nachname], Rummelsburger Landstraße 32, 12459 Berlin, E-Mail: [info@playbackforward.com](mailto:info@playbackforward.com)
 
 ## Kurz gesagt
 

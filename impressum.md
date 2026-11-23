@@ -10,8 +10,8 @@ description: Impressum von Playback Forward.
 ## Angaben gemäß § 5 DDG
 
 [Vorname Nachname]<br>
-[Straße Hausnummer]<br>
-[PLZ Ort]<br>
+Rummelsburger Landstraße 32<br>
+12459 Berlin<br>
 Deutschland
 
 ## Kontakt
