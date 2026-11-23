@@ -1,0 +1,13 @@
+{%- comment -%} Signal diagram: include.mode = single | manual | auto. A has crashed in every mode. {%- endcomment -%}
+{%- assign m = include.mode -%}
+<svg class="rig rig-{{ m }}" viewBox="0 0 320 170" role="img" aria-label="{{ include.label }}">
+  <g class="node dead"><rect x="4" y="14" width="96" height="44" rx="8"/><text x="52" y="34">Laptop A</text><text class="sub" x="52" y="49">crashed</text></g>
+  <path class="wire dead" d="M100 36 C118 36 112 85 130 85"/>
+  {%- if m != 'single' %}
+  <g class="node b"><rect x="4" y="106" width="96" height="44" rx="8"/><text x="52" y="126">Laptop B</text><text class="sub" x="52" y="141">{% if m == 'auto' %}playing{% else %}ready{% endif %}</text></g>
+  <path class="wire {% if m == 'auto' %}b live{% else %}b idle{% endif %}" d="M100 128 C118 128 112 85 130 85"/>
+  {%- endif %}
+  <g class="node mid"><rect x="130" y="60" width="92" height="50" rx="8"/><text x="176" y="82">{% if m == 'single' %}Interface{% elsif m == 'manual' %}Switch{% else %}Failover{% endif %}</text><text class="sub" x="176" y="97">{% if m == 'manual' %}manual{% elsif m == 'auto' %}automatic{% endif %}</text></g>
+  <path class="wire {% if m == 'auto' %}b live{% else %}dead{% endif %}" d="M222 85 H250"/>
+  <g class="node {% if m == 'auto' %}pa-on{% else %}dead{% endif %}"><rect x="250" y="63" width="66" height="44" rx="8"/><text x="283" y="89">PA</text></g>
+</svg>

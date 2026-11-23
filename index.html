@@ -1,0 +1,62 @@
+---
+layout: default
+description: Redundant playback for live shows. Laptop A crashes, Laptop B is already playing, nobody in the room notices. Videos, articles and consulting.
+---
+<section class="hero wrap">
+  <div>
+    <p class="eyebrow">A fails, B plays.</p>
+    <h1>Redundant playback for live shows.</h1>
+    <p class="lead">Laptop A crashes mid-song. With the right rig, Laptop B is already playing and nobody in the room notices. Short videos, articles and consulting on backup systems for backing tracks and click.</p>
+    <p class="actions">
+      <a class="btn" href="{{ site.instagram }}">Watch the videos</a>
+      <a class="btn ghost" href="{{ '/blog/' | relative_url }}">Read the articles</a>
+    </p>
+  </div>
+  <div class="hero-rig">{% include rig.html mode="auto" label="Laptop A has crashed. Laptop B keeps playing through an automatic failover into the PA." %}</div>
+</section>
+
+<section class="wrap block" id="setups">
+  <h2>Same crash, three shows.</h2>
+  <p class="intro">Laptop A dies halfway through a song. What the audience hears depends on how the rig was built.</p>
+  <div class="cards">
+    <div class="card">
+      {% include rig.html mode="single" label="One laptop. It crashed, the PA is silent." %}
+      <h3>One laptop</h3>
+      <p class="result">Silence until someone restarts.</p>
+      <p>The show stops. Everyone on stage waits for a reboot.</p>
+    </div>
+    <div class="card">
+      {% include rig.html mode="manual" label="Two laptops, manual switch. B is ready but someone has to flip the switch." %}
+      <h3>Two laptops, manual switch</h3>
+      <p class="result">About 2.5 s gap.<sup>*</sup></p>
+      <p>Someone has to notice, reach the switch and flip it. Everybody hears it.</p>
+    </div>
+    <div class="card">
+      {% include rig.html mode="auto" label="Two laptops, automatic failover. B is already playing into the PA." %}
+      <h3>Two laptops, auto failover</h3>
+      <p class="result green">No gap anyone hears.</p>
+      <p>B was already playing in sync. The failover takes over on its own.</p>
+    </div>
+  </div>
+  <p class="note"><sup>*</sup> Illustrative timing.</p>
+</section>
+
+<section class="wrap block" id="articles">
+  <h2>Articles</h2>
+  {% if site.posts.size > 0 %}
+  <ul class="posts">
+    {% for post in site.posts limit:3 %}
+    <li><a href="{{ post.url | relative_url }}"><span class="post-title">{{ post.title }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %b %Y' }}</time></a></li>
+    {% endfor %}
+  </ul>
+  <p><a class="more" href="{{ '/blog/' | relative_url }}">All articles →</a></p>
+  {% else %}
+  <p class="intro">The first articles are on the way. Until then, the videos are on <a href="{{ site.instagram }}">Instagram</a>.</p>
+  {% endif %}
+</section>
+
+<section class="wrap block" id="consulting">
+  <h2>Planning a rig for a tour?</h2>
+  <p class="intro">Send your current setup: laptops, interface, switch, and what has gone wrong before. You get a concept for a playback rig that keeps the show running when one machine fails.</p>
+  <p class="actions"><a class="btn" href="mailto:{{ site.email }}?subject=Playback%20rig">Email your setup</a></p>
+</section>

@@ -1,0 +1,8 @@
+title: Playback Forward
+description: Redundant playback systems for live shows. Short videos, articles and consulting on backup rigs for backing tracks and click.
+url: https://playbackforward.com
+email: info@playbackforward.com
+instagram: https://www.instagram.com/playbackforward/
+permalink: /blog/:title/
+markdown: kramdown
+exclude: [DNS-SETUP.md, README.md]
