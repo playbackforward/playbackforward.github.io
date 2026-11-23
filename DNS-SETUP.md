@@ -25,7 +25,7 @@ Die bestehenden A- und AAAA-Einträge für `@`, die auf WordPress zeigen, lösch
 | AAAA | @ | 2606:50c0:8001::153 |
 | AAAA | @ | 2606:50c0:8002::153 |
 | AAAA | @ | 2606:50c0:8003::153 |
-| CNAME | www | `<github-name>.github.io` |
+| CNAME | www | `playbackforward.github.io` |
 
 Einen vorhandenen A-Eintrag für `www` löschen, denn ein CNAME darf nicht neben anderen Einträgen stehen.
 
@@ -33,7 +33,7 @@ Einen vorhandenen A-Eintrag für `www` löschen, denn ein CNAME darf nicht neben
 
 | Typ | Host | Wert |
 |---|---|---|
-| TXT | `_github-pages-challenge-<github-name>` | Code von GitHub |
+| TXT | `_github-pages-challenge-playbackforward` | Code von GitHub |
 
 ## Nicht anfassen (E-Mail)
 

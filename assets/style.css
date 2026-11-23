@@ -20,7 +20,7 @@ a:hover{text-decoration-thickness:2px}
 .skip:focus{top:12px}
 
 .top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:20px}
-.brand img{display:block;height:44px;width:auto}
+.brand img{display:block;height:56px;width:auto}
 .top nav{display:flex;gap:24px}
 .top nav a{color:var(--ink);text-decoration:none;padding-block:10px}
 .top nav a:hover{color:var(--green)}
@@ -88,7 +88,7 @@ a:hover{text-decoration-thickness:2px}
 @media (max-width:560px){
   .top{flex-wrap:wrap}
   .top nav{gap:18px}
-  .brand img{height:36px}
+  .brand img{height:44px}
   .actions .btn{flex:1 1 100%;text-align:center}
   .posts a{flex-direction:column;gap:4px}
 }
