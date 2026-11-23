@@ -5,11 +5,11 @@ lang: de
 permalink: /privacy/
 description: Datenschutzerklärung von Playback Forward.
 ---
-<!-- TODO(owner): Platzhalter ersetzen und mit einem Generator (z. B. e-recht24) gegenprüfen. Keine Rechtsberatung. -->
+<!-- TODO(owner): mit einem Generator (z. B. e-recht24) gegenprüfen. Keine Rechtsberatung. -->
 
 ## Verantwortlicher
 
-[Vorname Nachname], Rummelsburger Landstraße 32, 12459 Berlin, E-Mail: [info@playbackforward.com](mailto:info@playbackforward.com)
+Frank Pollak, Rummelsburger Landstraße 32, 12459 Berlin, E-Mail: [info@playbackforward.com](mailto:info@playbackforward.com)
 
 ## Kurz gesagt
 
